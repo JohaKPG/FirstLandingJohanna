@@ -1,0 +1,136 @@
+.fondo {
+
+    #fondo-principal {
+        width: 100%;
+        object-fit: cover;
+        /* object-position: top -400px right 0;    */
+        /* overflow-x: hidden; */
+    }
+
+    #fondo-movil {
+        display: none;
+    }
+}
+
+#titulo-principal {
+    position: absolute;
+    top: 420px;
+    margin-left: 6%;
+
+    .luxury {
+        color: rgb(224, 218, 218);
+        width: 490px;
+        height: 47px;
+        top: 644px;
+        left: 122px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: PF Regal Display Pro;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 45px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .real {
+        color: rgba(225, 255, 255, 1);
+        font-family: PF Regal Display Pro;
+        font-size: 60px;
+        line-height: 45px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        width: 746px;
+        height: 99px;
+        top: 683px;
+        left: 106px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+
+    .proper {
+        background-color: transparent;
+        color: rgba(255, 255, 255, 1);
+        border-radius: 100px;
+        border-color: rgba(225, 255, 255, 1);
+        border: 1px solid;
+        font-family: Brandon Grotesque;
+        font-size: 30px;
+        font-weight: 390;
+        line-height: 45px;
+        text-align: center;
+        text-decoration-skip-ink: none;
+        width: 407px;
+        height: 80px;
+        top: 855px;
+        left: 212px;
+    }
+}
+
+#redes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 40px 25px 25px 25px 25px;
+    width: 40px;
+    justify-items: center;
+    position: fixed;
+    top: 370px;
+
+
+    img {
+        display: block;
+        margin-top: 150px;
+
+    }
+
+    p {
+        color: rgba(126, 126, 126, 1);
+        transform: rotate(90deg);
+        display: inline-block;
+        font-size: x-large;
+        font-weight: bolder;
+
+
+
+    }
+
+    .rayita {
+        height: 100px;
+        width: 1px;
+        border-left: 2px solid;
+        margin-left: 1px;
+        color: rgba(126, 126, 126, 1);
+        margin-top: 70px;
+
+    }
+
+
+    /* Cambios cuando la pantalla tenga igual o menos que 320 px */
+    @media (max-width: 320px) {
+
+
+        .fondo {
+            #fondo-principal {
+                display: none;
+            }
+
+            #fondo-movil {
+                display: grid;
+                /* grid-template-columns: 1fr; */
+                width: 1oopx;
+                object-fit: contain;
+
+            }
+
+
+
+
+        }
+
+
+
+    }
+}

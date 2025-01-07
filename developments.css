@@ -1,0 +1,9 @@
+.developments1{
+    margin-top: 0%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: aqua;
+    justify-items: center;
+
+    
+}

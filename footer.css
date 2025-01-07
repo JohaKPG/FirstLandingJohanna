@@ -1,0 +1,271 @@
+footer {
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    margin-top: 900px;
+
+
+
+
+    .contenedor-gris {
+        background-color: #26282B;
+        margin: auto;
+        transform: translateY(-50%);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        width: 1300px;
+        height: 312px;
+        top: 2869px;
+        left: 122px;
+        gap: 0px;
+        opacity: 0px;
+
+
+        #textfooter {
+            font-size: 30px;
+            color: white;
+            justify-self: center;
+            font-family: PF Regal Display Pro;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 65px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+
+            span {
+                color: rgba(223, 153, 27, 1);
+                font-family: PF Regal Display Pro;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 45px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+
+            }
+        }
+
+        .formulario {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 50px;
+            gap: 0px;
+
+            input {
+                background-color: transparent;
+                border: solid 1px rgba(126, 126, 126, 1);
+                border-radius: 100px;
+                padding: 10px 30px;
+                font-size: 20px;
+                font-family: Brandon Grotesque;
+                font-size: 20px;
+                font-weight: 390;
+                line-height: 45px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            button {
+                background-color: transparent;
+                border-radius: 100px;
+                border: solid 1px rgba(223, 153, 27, 1);
+                padding: 10px 30px;
+                font-size: 30px;
+                color: rgba(223, 153, 27, 1);
+                font-family: Brandon Grotesque;
+                font-size: 30px;
+                font-weight: 390;
+                line-height: 45px;
+                text-align: center;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                width: 60%;
+                justify-self: end;
+            }
+
+            p {
+                margin-left: 20px;
+                color: white;
+                font-family: Brandon Grotesque;
+                font-size: 25px;
+                font-weight: 390;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                bottom: 0px;
+                top: 100%;
+            }
+        }
+
+    }
+
+    .contenedor-negro {
+
+        color: white;
+        display: grid;
+        width: 90%;
+        margin: auto;
+        gap: 10px;
+
+        .informacion {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+
+            .primera-columna {
+                align-self: end;
+
+            }
+
+            .segunda-columna {
+                justify-self: center;
+                align-self: center;
+
+                #lugar {
+                    line-height: 25px;
+                }
+
+            }
+
+            .tercera-columna {
+
+
+                justify-self: center;
+                align-self: self-end;
+
+                ul {
+                    li {
+                        text-align: 10px;
+                    }
+
+                    #Contact {
+
+                        margin-top: 20px;
+                    }
+
+                }
+            }
+
+        }
+
+        .cuarta-columna {
+            text-align: right;
+            align-self: self-end;
+
+            ul{
+                #mail{
+                    margin-top: 20px;
+                }
+            }
+        }
+
+
+        ul {
+            li {
+                list-style: none;
+            }
+        }
+    }
+
+    .copyright {
+        border-top: solid 2px white;
+
+        p {
+            margin: 20px 0px;
+            text-align: center;
+            color: white;
+            font-family: Brandon Grotesque;
+            font-size: 20px;
+            font-weight: 450;
+            line-height: 45px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+
+
+        }
+
+
+
+
+    }
+
+
+}
+
+
+
+/* Cambios cuando la pantalla tenga igual o menos que 320 px */
+@media (max-width: 320px) {
+
+
+    footer {
+        .contenedor-gris {
+            display: none;
+        }
+
+
+        .contenedor-negro {
+            .informacion {
+                grid-template-columns: 1fr 1fr;
+
+                .primera-columna {
+                    grid-column: span 2;
+                    margin-top: 40px;
+                }
+
+                .segunda-columna {
+                    justify-self: baseline;
+                    margin-top: 20px;
+
+
+
+                }
+
+                .tercera-columna {
+                    justify-self: baseline;
+                    margin-top: 20px;
+                    text-indent: 10px;
+                    line-height: 25px;
+
+                    ul{
+                        #Contact{
+                            margin-top: 0%;
+                        }
+                    }
+                }
+
+                .cuarta-columna {
+                    grid-column: span 2;
+                    margin-top: 30px;
+                    justify-self: baseline;
+
+                    ul{
+                        #Call{
+                            display: none;
+                        }
+                        #Contacto{
+                            justify-self: baseline;
+                        }
+                        #mail{
+                            margin-top: 0%;
+                            padding-bottom: 20px;
+                            
+                        }
+
+                    }
+                }
+            }
+
+            .copyright {
+                display: none;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+nav {
+  width: 90%;
+  height: 100px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  border-top: solid 2px white;
+  width: 100%;
+  
+ 
+            
+  
+
+  #logo {
+    margin-left: 100px;
+  }
+
+  #lupita {
+    display: none;
+  }
+
+  #ellipse {
+    display: none;
+  }
+
+  #menu1{
+    display: none;
+  }
+ 
+ 
+
+  .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; /*para centrar los items*/
+    gap: 40px; /* es para dar espacio entre columnas*/
+
+    .idiomas {
+      display: grid;
+      grid-template-columns: 1fr 1fr 100px 1fr;
+      align-items: center;
+
+
+      img {
+        margin-right: 40px;
+      }
+
+
+    }
+  
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .grey {
+      color: grey;
+    }
+
+    .registro {
+      display: grid;
+      grid-template-columns: 1fr 1px 1fr;
+
+
+      a {
+        justify-self: center;
+      }
+
+      #bar {
+        height: 100%;
+        width: 1px;
+        background-color: white;
+      }
+    }
+  }
+}
+
+
+/* Cambios cuando la pantalla tenga igual o menos que 320 px */
+@media (max-width: 320px) {
+
+  html {
+    background-color: red;
+  }
+
+
+  nav {
+
+    /* Para cumplir la condicion de desaparacer LOGO cuando este meno de 900px */
+    #logo {
+      display: none;
+    }
+
+
+    /* Para cumplir la condicion de aparacer la lupita cuando este meno de 900px */
+    #lupita {
+      display: block;
+      position: relative;
+      top: 30px;
+      left: 39px;
+    }
+
+    #ellipse {
+      display: block;
+      position: relative;
+      top: 0px;
+      left: 20px;
+    }
+    
+    #menu1 {
+      display: block; /* Mostrar menú */
+      position: absolute;
+      right: 50px;
+      top: 30px;
+    } 
+     
+
+    /* Para cumplir la condicion de desaparacer REGISTRO (SING UP, LOGIN IN) cuando este meno de 900px */
+    .links .registro {
+        display: none; /* Ocultar registro */
+      }
+    
+
+    /* Para cumplir la condicion de desaparacer IDIOMAS (ESP, ENG) cuando este meno de 900px */
+    .links .idiomas {
+        display: none; /* Ocultar idiomas */
+      }   
+  }
+
+  }
+

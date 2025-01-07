@@ -1,0 +1,316 @@
+body {
+    .seccion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+
+
+
+        .galeria1 {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 20px;
+
+
+            .mask1 {
+
+                grid-column: span 2;
+                width: 106px;
+                height: 550px;
+                top: 1204px;
+                gap: 0px;
+                opacity: 0px;
+
+
+            }
+
+            .piscina {
+                grid-column: span 5;
+                width: 407px;
+                height: 550px;
+                top: 1204px;
+                left: 122px;
+                gap: 0px;
+                opacity: 0px;
+
+
+                .texto-piscina {
+                    position: relative;
+                    transform: translateY(-100%);
+                    padding: 35px;
+
+
+
+                    .England {
+                        font-family: PF Regal Display Pro;
+                        color: rgba(255, 255, 255, 1);
+                        font-size: 30px;
+                        font-weight: 400;
+                        line-height: 45px;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        width: 323px;
+                        height: 47px;
+                        top: 1637px;
+                        left: 164px;
+                        gap: 0px;
+                        opacity: 0px;
+
+                    }
+
+                    .Glasgow {
+                        font-family: PF Regal Display Pro;
+                        color: rgba(255, 255, 255, 1);
+                        font-size: 40px;
+                        font-weight: 500;
+                        line-height: 45px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        width: 296px;
+                        height: 43px;
+                        top: 1684px;
+                        left: 164px;
+                        gap: 0px;
+                        opacity: 0px;
+
+
+                    }
+                }
+            }
+
+            .jardin {
+
+                #jardin-movil {
+                    display: none;
+                }
+
+                #jardinimg {
+                    grid-column: span 5;
+                    width: 407px;
+                    height: 550px;
+                    top: 1204px;
+                    left: 545px;
+                    gap: 0px;
+                    opacity: 0px;
+                }
+
+            }
+
+
+
+            .texto-jardin {
+                position: absolute;
+                transform: translateY(-100%);
+                background-color: white;
+                width: 408px;
+                height: 145px;
+                position: relative;
+                padding: 20px;
+                align-items: center;
+
+
+
+                .France {
+                    width: 184px;
+                    height: 33px;
+                    gap: 0px;
+                    opacity: 0px;
+                    font-family: PF Regal Display Pro;
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 45px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    color: rgba(70, 69, 71, 1);
+                    text-align: center;
+
+                }
+
+                .Marseilles {
+                    width: 296px;
+                    height: 43px;
+                    top: 1686px;
+                    left: 587px;
+                    gap: 0px;
+                    opacity: 0px;
+                    font-family: PF Regal Display Pro;
+                    font-size: 40px;
+                    font-weight: 500;
+                    line-height: 45px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    color: rgba(0, 0, 0, 1);
+                    line-height: 65px;
+                }
+            }
+        }
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.seccion {
+    .contenido {
+        display: grid;
+        /* grid-template-columns: 1fr; */
+
+        .textos {
+            text-align: right;
+            margin-right: 50px;
+
+
+
+            .Worldwide {
+                color: rgba(223, 153, 27, 1);
+                font-family: PF Regal Display Pro;
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 45px;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+
+
+
+            }
+
+            .Properties {
+                color: rgba(0, 0, 0, 1);
+                font-family: PF Regal Display Pro;
+                font-size: 55px;
+                font-weight: 500;
+                line-height: 45px;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                
+                
+
+            }
+
+        }
+
+
+        .botones {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            align-self: baseline;
+            height: min-content;
+            
+
+
+            .PREV {
+                color: rgba(180, 183, 183, 1);
+                background-color: transparent;
+                border: none;
+                size: 20px;
+            }
+
+            .View {
+                align-content: center;
+                background-color: transparent;
+                border-radius: 100px;
+                /* height: 60px;
+                    width: 250px; */
+                padding: 20px;
+                size: 30px;
+
+            }
+
+            .NEXT {
+                color: rgba(223, 153, 27, 1);
+                background-color: transparent;
+                border: none;
+                size: 20px;
+            }
+
+        }
+    }
+
+}
+
+
+
+
+
+/* Cambios cuando la pantalla tenga igual o menos que 320 px */
+@media (max-width: 320px) {
+
+
+
+    .seccion {
+        grid-template-columns: 1fr;
+
+
+        .galeria1 {
+            .mask1 {
+                display: none
+            }
+
+
+
+            .piscina {
+                grid-column: span 10;
+            }
+
+            #jardin-movil {
+                grid-column: span 2;
+                /* gap: 0px;
+                opacity: 0px;
+                object-fit: cover;
+                /* width: 104px;
+                height: 550px; */
+                
+            }
+        }
+
+
+
+        .texto-piscina {
+            display: none;
+        }
+
+        .jardin {
+            .texto-jardin {
+                display: none;
+            }
+
+            #jardinimg {
+                display: none;
+            }
+        }
+    }
+
+
+    .contenido {
+        display: none;
+
+        .botones {
+            display: none;
+
+            .View {
+                display: none;
+
+            }
+
+            .NEXT {
+                display: none;
+            }
+
+            .PREV {
+                display: none;
+            }
+        }
+
+        .textos {
+            display: none;
+        }
+    }
+}
