@@ -2,7 +2,9 @@ footer {
     height: 100%;
     width: 100%;
     background-color: #000000;
-    margin-top: 900px;
+    margin-top: 200px;
+    /* width: 100%; */
+    object-fit: cover;
 
 
 
@@ -20,6 +22,9 @@ footer {
         left: 122px;
         gap: 0px;
         opacity: 0px;
+        width: 80%;
+        object-fit: contain;
+
 
 
         #textfooter {
@@ -108,9 +113,10 @@ footer {
 
         color: white;
         display: grid;
-        width: 90%;
+        width: 100%;
         margin: auto;
         gap: 10px;
+        object-fit: cover;
 
         .informacion {
             display: grid;
@@ -118,6 +124,7 @@ footer {
 
             .primera-columna {
                 align-self: end;
+                margin-left: 40px;
 
             }
 
@@ -155,10 +162,11 @@ footer {
         .cuarta-columna {
             text-align: right;
             align-self: self-end;
+            margin-right: 40px;
 
             ul{
                 #mail{
-                    margin-top: 20px;
+                    margin-top: 20px
                 }
             }
         }
@@ -200,7 +208,7 @@ footer {
 
 
 /* Cambios cuando la pantalla tenga igual o menos que 320 px */
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 600px) {
 
 
     footer {

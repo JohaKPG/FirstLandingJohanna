@@ -14,11 +14,8 @@ nav {
   align-items: center;
   position: fixed;
   top: 0;
-  border-top: solid 2px white;
+  border-top: solid 1px white;
   width: 100%;
-  
- 
-            
   
 
   #logo {
@@ -87,7 +84,7 @@ nav {
 
 
 /* Cambios cuando la pantalla tenga igual o menos que 320 px */
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 600px){
 
   html {
     background-color: red;

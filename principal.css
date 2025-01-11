@@ -77,7 +77,7 @@
     width: 40px;
     justify-items: center;
     position: fixed;
-    top: 370px;
+    top: 350px;
 
 
     img {
@@ -107,30 +107,27 @@
 
     }
 
+}
 
-    /* Cambios cuando la pantalla tenga igual o menos que 320 px */
-    @media (max-width: 320px) {
-
-
-        .fondo {
-            #fondo-principal {
-                display: none;
-            }
-
-            #fondo-movil {
-                display: grid;
-                /* grid-template-columns: 1fr; */
-                width: 1oopx;
-                object-fit: contain;
-
-            }
+/* Cambios cuando la pantalla tenga igual o menos que 320 px */
 
 
+@media (min-width: 320px) and (max-width: 600px)  {
+   
+    .fondo {
 
+        #fondo-principal {
+            display: none;
 
         }
 
+        #fondo-movil {
+            display: grid;
+            /* grid-template-columns: 1fr; */
+            width: 1oopx;
+            object-fit: contain;
 
+        }
 
     }
-}
+}  
