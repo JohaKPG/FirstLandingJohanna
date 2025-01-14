@@ -29,6 +29,10 @@
         text-decoration-skip-ink: none;
     }
 
+    .Worldwide1{
+        display: none;
+    }
+
     .text-developments {
         font-family: PF Regal Display Pro;
         font-size: 80px;
@@ -204,18 +208,59 @@
     body {
 
         .developments1 {
-            .text-luxury {
-                display: none;
+            .text-titulo{
+                margin-top: 20px;
+                margin-left: 10px;
+
+                .text-luxury {
+                   display: grid;
+            
+                }
+
+
+                .text-developments{
+                    padding: 0;
+                    margin: 0;
+                    font-size: 50px;
+                    text-align: left;
+                    margin-top: 30px;
+
+                }
             }
+         
 
             .fotos-movil {
+                margin-top: 40px;
                 display: grid;
                 grid-template-columns: 1fr;
                 gap: 20px;
                 width: 100%;
                 object-fit: cover;
+                /* width: 367px;   */
+                /* width: min-content; */
+
+                .sala{
+                    margin: 0;
+                    display: grid;
+                    width: 100%;
+                }
+
+                .cocina{
+                    display: grid;
+                    width: 100%;
+                    margin: 0;
+                }
+
+                .start1{
+                  width: 100%;
+                  margin: 0;
+                    
+                    
+                }
+
 
             }
+            
         }
 
         .developments2 {

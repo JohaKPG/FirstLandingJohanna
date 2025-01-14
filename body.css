@@ -262,6 +262,8 @@ body {
     
             grid-template-columns: 1fr;
             width: 100%;
+
+            
     
             .galeria1{
                 display: grid;

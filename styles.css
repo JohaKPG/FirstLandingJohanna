@@ -13,11 +13,12 @@ nav {
   grid-template-columns: 3fr 2fr;
   align-items: center;
   position: fixed;
-  top: 0;
-  border-top: solid 1px white;
+  top: 0px;
+  /* border-top: solid 1 px white; */
+  border-top:solid 2px white;
   width: 100%;
+ 
 
-  
 
   #logo {
     margin-left: 100px;
@@ -35,11 +36,11 @@ nav {
   #menu1{
     display: none;
   }
- 
-  #line{
-    width: 100%
-    
-    
+  
+  .Iconos-Header{
+    .line{
+      z-index: 0;
+    }
   }
 
  
@@ -50,12 +51,19 @@ nav {
     align-items: center; /*para centrar los items*/
     gap: 40px; /* es para dar espacio entre columnas*/
     /* width: min-content; */
+    z-index: 1;
+    
+   
+ 
 
     .idiomas {
       display: grid;
       grid-template-columns: 1fr 1fr 100px 1fr;
       align-items: center;
       width: min-content;
+      /* z-index: 0; */
+  
+
       img {
         margin-right: 40px;
       }
@@ -70,11 +78,13 @@ nav {
 
     .grey {
       color: grey;
+      margin-right: 20px;
     }
 
     .registro {
       display: grid;
       grid-template-columns: 1fr 1px 1fr;
+      /* z-index: 0; */
 
 
       a {
@@ -85,6 +95,7 @@ nav {
         height: 100%;
         width: 1px;
         background-color: white;
+        /* z-index: 1; */
       }
     }
   }
